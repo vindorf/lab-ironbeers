@@ -1,12 +1,9 @@
 <div class="container">
   <h1>Beers</h1>
-  <div class="single-beer-container">
+ 
     {{#each beersR}}
-    <img src="{{this.image_url}}" alt="" width="100px">
-    <h5>{{this.name}}</h5>
-    <br>
-    <p> {{  this.tagline}}</p>
-    <p>{{this.description}}</p>
+    {{> beerCard this}}
+    
     {{/each}}
   </div>
 </div>
